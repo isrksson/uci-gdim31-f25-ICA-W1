@@ -24,6 +24,8 @@ Table #2:
 
 Tacos are like components. Taco shells are classes since they are a template of a component. Member variables are the ingredients. Methods are how you want your taco.
 
+The balls get a lot brighter after bouncing too many times since they increase speeds after bouncing so their average will be above the threshold after a certain point, increasing their brightness by a lot.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
