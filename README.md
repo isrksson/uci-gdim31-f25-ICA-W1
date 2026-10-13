@@ -22,7 +22,7 @@ Table #2:
 2. `void SetLightDimness(int sanityLevel)`
 3. `bool DidPlayerHitBeat(float accuracy)`
 
-Tacos are like components. Taco shells are classes since they are a template of a component. Member variables are the ingredients.
+Tacos are like components. Taco shells are classes since they are a template of a component. Member variables are the ingredients. Methods are how you want your taco.
 
 ## Open-Source Assets
 ### W1
