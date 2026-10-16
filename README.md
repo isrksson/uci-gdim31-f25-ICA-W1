@@ -17,13 +17,16 @@ When the camera is no longer a child of the cat, it does not follow the cat arou
 ### W3
 > *Finished: 10/12/2026*
 
+#### Part 1.
 Table #2:
 1. `String GetResponse(int choice, int friendshipLevel, bool secret)`
 2. `void SetLightDimness(int sanityLevel)`
 3. `bool DidPlayerHitBeat(float accuracy)`
 
+#### Part 2.
 Tacos are like components. Taco shells are classes since they are a template of a component. Member variables are the ingredients. Methods are how you want your taco.
 
+#### Part 3.
 The balls get a lot brighter after bouncing too many times since they increase speeds after bouncing so their average will be above the threshold after a certain point, increasing their brightness by a lot.
 
 ## Open-Source Assets
