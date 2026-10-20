@@ -31,7 +31,7 @@ The balls get a lot brighter after bouncing too many times since they increase s
 
 ### W4
 
-1. table #1. Cat and Soccerball need a rigidbody because they move which involves physics. Goal doesn't need it because it is stationary and doesn't need to move/interact with the player or ball. Goal also needs a trigger since it's collider needs to be detected which goal is made.
+1. table #4. Cat and Soccerball need a rigidbody because they move which involves physics. Goal doesn't need it because it is stationary and doesn't need to move/interact with the player or ball. Goal also needs a trigger since it's collider needs to be detected which goal is made.
 
 2. I forget to save the code before I go back to Unity so I cry inside trying to find the issue. I fixed this by turning autosave on.
 
