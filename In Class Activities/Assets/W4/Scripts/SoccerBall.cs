@@ -1,3 +1,4 @@
+using System.Threading;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,6 +8,10 @@ public class SoccerBall : MonoBehaviour
     [SerializeField] private TMP_Text _pointsText;
     [SerializeField] private TMP_Text _timeText;
     [SerializeField] private ParticleSystem _goalVFX;
+
+    int points = 0;
+
+    float time = 0.0f;
 
     // STEP 1 -----------------------------------------------------------------
     // The OnTriggerEnter method is a collision method called by Unity that
@@ -21,10 +26,9 @@ public class SoccerBall : MonoBehaviour
     //
     // Also, uncomment and FIX the Debug.Log line.
 
-    //private ?? ??
-    //{
-        // finish STEP 1 by uncommenting and fixing the below line!
-        //Debug.Log(SoccerBall detected a collision with a trigger collider!);
+    private void OnTriggerEnter(Collider other)
+    {
+         //finish STEP 1 by uncommenting and fixing the below line!
 
         // STEP 2 -------------------------------------------------------------
         // Write an IF STATEMENT to check if the game object we collided with
@@ -34,9 +38,14 @@ public class SoccerBall : MonoBehaviour
         // Then, move your Debug.Log() statement so that it's only called if
         //      the colliding object has the "Goal" tag.
 
+        if(other.gameObject.tag.Equals("Goal"))
+        {
+            MadeGoal();
+        }
+
 
         // STEP 2 -------------------------------------------------------------
-    //}
+    }
 
     // STEP 1 -----------------------------------------------------------------
 
@@ -59,9 +68,24 @@ public class SoccerBall : MonoBehaviour
 
         // STEP 4 -------------------------------------------------------------
     
-    
+    void MadeGoal()
+    {
+        Debug.Log("SoccerBall detected a collision with a trigger collider!");
+        _goalVFX.Play();
+        points++;
+
+        _pointsText.text = "points: " + points;
+
+        time = 0.0f;
+    }
+
     // STEP 3 -----------------------------------------------------------------
 
+    private void Update()
+    {
+        time += Time.deltaTime;
+        _timeText.text = "time since last goal: " + time;
+    }
 
     // STEP 5 -----------------------------------------------------------------
     // I am doing something evil, but I believe in you.
@@ -78,7 +102,7 @@ public class SoccerBall : MonoBehaviour
     //      2. Use your MadeGoal method to update the points and text.
     //
     // STEP 5 -----------------------------------------------------------------
-    
+
 
     // STEP 6 -----------------------------------------------------------------
     // Like the last step, these flags do NOT show you where to put all of the

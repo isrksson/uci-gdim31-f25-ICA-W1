@@ -29,6 +29,12 @@ Tacos are like components. Taco shells are classes since they are a template of 
 #### Part 3.
 The balls get a lot brighter after bouncing too many times since they increase speeds after bouncing so their average will be above the threshold after a certain point, increasing their brightness by a lot.
 
+### W4
+
+1. table #1. Cat and Soccerball need a rigidbody because they move which involves physics. Goal doesn't need it because it is stationary and doesn't need to move/interact with the player or ball. Goal also needs a trigger since it's collider needs to be detected which goal is made.
+
+2. I forget to save the code before I go back to Unity so I cry inside trying to find the issue. I fixed this by turning autosave on.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
