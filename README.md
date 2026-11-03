@@ -35,6 +35,12 @@ The balls get a lot brighter after bouncing too many times since they increase s
 
 2. I forget to save the code before I go back to Unity so I cry inside trying to find the issue. I fixed this by turning autosave on.
 
+### W5
+
+1. `DeerW5` needs a SerializeField variable for our target's transform and a private variable for our NavMeshAgent.
+2. I used both the `Start()` and `Update()` methods.
+3. `Start()` allows us to initialize/grab the Deer's NavMeshAgent. In `Update()`, we continuously update the destination using the target's position.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
