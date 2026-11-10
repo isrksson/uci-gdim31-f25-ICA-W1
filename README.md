@@ -41,6 +41,17 @@ The balls get a lot brighter after bouncing too many times since they increase s
 2. I used both the `Start()` and `Update()` methods.
 3. `Start()` allows us to initialize/grab the Deer's NavMeshAgent. In `Update()`, we continuously update the destination using the target's position.
 
+### W7
+> *Finished: 11/09/2026*
+
+#### Class Resource Guide
+Worked on Unity & General Programming: [Link to doc](https://docs.google.com/document/d/1C6uCwfuqZOueFMv-xBgh9KSqakfdi0eeqCGhbDev6XM/edit?usp=sharing)
+#### Notes
+Partner = Matthew Liu
+1. Bats need a speed, a boolean to check if it is chasing, and a Vector3 for its target/player position it will move towards.
+2. `Update()`, `isChasing(...)`, `stopChasing()`
+3. We need an `Update()` function to continue to call `Vector3.MoveTowards(...)` to update the bat's position to move towards the player if `_isChasing` is true. We also need 2 functions `startChasing(Vector3 playerPosition)` and `stopChasing()`. `startChasing` takes in the player position since the `BatManager` has a reference to the player and updates `_targetPosition` to the player's position.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
