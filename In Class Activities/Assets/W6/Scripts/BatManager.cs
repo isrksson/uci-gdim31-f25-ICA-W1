@@ -12,6 +12,8 @@ public class BatManager : MonoBehaviour
     // STEP 1 -----------------------------------------------------------------
     // Add a member variable named "_bats" that's an array of BatW6 Components.
     // In the Inspector, add ALL of the bats in the Scene.
+
+    [SerializeField] private BatW6[] _bats;
     
     // STEP 1 -----------------------------------------------------------------
 
@@ -70,6 +72,16 @@ public class BatManager : MonoBehaviour
         //      and pass the bat in as an argument.
         
 
+        foreach(BatW6 bat in _bats)
+        {
+            if(Vector3.Distance(bat.transform.position, _playerTransform.position) < _interactDistance)
+            {
+                bat.startChasing(_playerTransform.position);
+            } else
+            {
+                bat.stopChasing();
+            }
+        }
 
         // STEP 2 -------------------------------------------------------------
 
