@@ -35,14 +35,19 @@ The balls get a lot brighter after bouncing too many times since they increase s
 
 2. I forget to save the code before I go back to Unity so I cry inside trying to find the issue. I fixed this by turning autosave on.
 
-### W5
+### W6
+> *Finished: 11/09/2026*
 
 1. `DeerW5` needs a SerializeField variable for our target's transform and a private variable for our NavMeshAgent.
 2. I used both the `Start()` and `Update()` methods.
 3. `Start()` allows us to initialize/grab the Deer's NavMeshAgent. In `Update()`, we continuously update the destination using the target's position.
 
 ### W7
-> *Finished: 11/09/2026*
+> *Finished: 11/16/2026*
+
+Partner: Matthew Liu
+
+1. In Step 2, the line of code `transform.position += movement * Vector3.forward * _moveSpeed * Time.deltaTime;` uses the global forward vector of `(0, 0, 1)`. You need to use the muskrat's local foward transform since rotating changes its "forward" vector.  
 
 #### Class Resource Guide
 Worked on Unity & General Programming: [Link to doc](https://docs.google.com/document/d/1C6uCwfuqZOueFMv-xBgh9KSqakfdi0eeqCGhbDev6XM/edit?usp=sharing)
