@@ -47,7 +47,14 @@ The balls get a lot brighter after bouncing too many times since they increase s
 
 Partner: Matthew Liu
 
-1. In Step 2, the line of code `transform.position += movement * Vector3.forward * _moveSpeed * Time.deltaTime;` uses the global forward vector of `(0, 0, 1)`. You need to use the muskrat's local foward transform since rotating changes its "forward" vector.  
+1. In Step 2, the line of code `transform.position += movement * Vector3.forward * _moveSpeed * Time.deltaTime;` uses the global forward vector of `(0, 0, 1)`. You need to use the muskrat's local foward transform since rotating changes its "forward" vector.
+
+### W9
+> *Finished: 11/23/2026*
+
+I worked on section of Player and Collectables.
+<img width="606" height="687" alt="image" src="https://github.com/user-attachments/assets/feffd713-ef6d-45fb-80e4-0ce883c26229" />
+
 
 #### Class Resource Guide
 Worked on Unity & General Programming: [Link to doc](https://docs.google.com/document/d/1C6uCwfuqZOueFMv-xBgh9KSqakfdi0eeqCGhbDev6XM/edit?usp=sharing)
