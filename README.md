@@ -53,6 +53,8 @@ Partner: Matthew Liu
 > *Finished: 11/23/2026*
 
 I worked on section of Player and Collectables.
+Link to [Google Drawing](https://docs.google.com/drawings/d/1guaLHKu4HPlHOXf-3tyLUzdFrcX5fQPuAd4iNXwO-ZM/edit?usp=sharing)
+
 <img width="606" height="687" alt="image" src="https://github.com/user-attachments/assets/feffd713-ef6d-45fb-80e4-0ce883c26229" />
 
 
